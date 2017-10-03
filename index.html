@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>My First Angular Application!</title>
+
+	<!-- CSS -->
+	<!-- load bootstrap and our stylesheet -->
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+		<style type="text/css">
+			body { padding-top:50px; }
+		</style>
+
+		<!-- JS -->
+		<!-- load angular and our custom application -->
+		<script src="js/angular.min.js"></script>
+		<script src="js/app.js"></script>
+</head>
+<!-- declare our angular application and angular controller -->
+<body class='container' ng-app="firstApp" ng-controller="mainController as main">
+	<div class="jumbotron">
+	<!-- display the message -->
+	<h2>This is my message:</h2>
+	{{ main.message }}
+
+	</div>
+
+
+</body>
+</html>
+
+</div>
